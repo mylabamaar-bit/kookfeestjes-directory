@@ -25,12 +25,17 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: STOP-check
+      - name: STOP-check en Cloudflare-koppeling
         id: stop
         env:
           KILL_SWITCH: ${{ vars.KILL_SWITCH }}
+          HEEFT_CF: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
         run: |
-          if bash scripts/stop-check.sh; then echo "actief=nee" >> "$GITHUB_OUTPUT"
+          if [ "$HEEFT_CF" != "true" ]; then
+            echo "actief=ja" >> "$GITHUB_OUTPUT"
+            echo "::notice::Cloudflare nog niet gekoppeld (secrets ontbreken) – deploy overgeslagen."
+            echo "## Deploy overgeslagen: Cloudflare nog niet gekoppeld" >> "$GITHUB_STEP_SUMMARY"
+          elif bash scripts/stop-check.sh; then echo "actief=nee" >> "$GITHUB_OUTPUT"
           else
             echo "actief=ja" >> "$GITHUB_OUTPUT"
             echo "::warning::STOP actief – er wordt NIETS gedeployd."

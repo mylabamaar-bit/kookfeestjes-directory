@@ -11,8 +11,8 @@ gh api -X PUT "repos/$REPO/branches/main/protection" \
   -H "Accept: application/vnd.github+json" --input - <<'JSON'
 {
   "required_status_checks": { "strict": true, "contexts": ["checks"] },
-  "enforce_admins": false,
-  "required_pull_request_reviews": null,
+  "enforce_admins": true,
+  "required_pull_request_reviews": { "required_approving_review_count": 0 },
   "restrictions": null,
   "allow_force_pushes": false,
   "allow_deletions": false
