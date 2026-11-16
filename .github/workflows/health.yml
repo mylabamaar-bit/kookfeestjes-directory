@@ -1,0 +1,26 @@
+# Periodieke health-check van productie. Alleen melden (job faalt), geen rollback.
+name: health
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Health-check productie
+        env:
+          PRODUCTION_URL: ${{ secrets.PRODUCTION_URL }}
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+        run: |
+          if [ -z "${PRODUCTION_URL:-}" ]; then
+            echo "::notice::PRODUCTION_URL is leeg – health-check overgeslagen."
+            exit 0
+          fi
+          bash scripts/deploy/health-check.sh "$PRODUCTION_URL"

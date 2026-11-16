@@ -1,0 +1,24 @@
+{
+  "naam": "BakingTime (Kids & Cake)",
+  "slug": "bakingtime-kids-en-cake-haarlem",
+  "stad": "haarlem",
+  "website": "https://www.bakingtime.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "bronnen": [
+    {
+      "url": "https://www.bakingtime.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.bakingtime.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Al sinds 2003 organiseren wij de leukste Kinderfeestjes en Workshops voor Kids. De ambacht van het Bakken staat bij (bijna) al onze feestjes centraal;"
+}

@@ -1,0 +1,24 @@
+{
+  "naam": "Kookstudio 25",
+  "slug": "kookstudio-25-rotterdam",
+  "stad": "rotterdam",
+  "website": "https://www.kookstudio25.nl",
+  "kinderaanbod": "twijfel",
+  "type": "workshop",
+  "bronnen": [
+    {
+      "url": "https://www.kookstudio25.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.kookstudio25.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "Koken met collega&#8217;s, vrienden of familie? Wij verzorgen workshops voor groepen vanaf 15 tot 120 personen."
+}

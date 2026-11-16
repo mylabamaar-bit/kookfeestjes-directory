@@ -1,0 +1,25 @@
+{
+  "naam": "Kookparty Nijmegen",
+  "slug": "kookparty-nijmegen-nijmegen",
+  "stad": "nijmegen",
+  "website": "https://www.kookparty.com",
+  "kinderaanbod": "twijfel",
+  "type": "kookfeestje",
+  "leeftijdVan": 6,
+  "bronnen": [
+    {
+      "url": "https://www.kookparty.com",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.kookparty.com/kinderfeest/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "Kookparty biedt leerzame kookfeestjes aan die voor iedereen leuk en lekker zijn!"
+}

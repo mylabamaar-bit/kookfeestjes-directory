@@ -1,0 +1,25 @@
+{
+  "naam": "KooKjes De KooKschool (Rheden)",
+  "slug": "kookjes-de-kookschool-rheden-arnhem",
+  "stad": "arnhem",
+  "website": "https://www.kookjes.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "leeftijdVan": 2,
+  "bronnen": [
+    {
+      "url": "https://www.kookjes.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.kookjes.nl/kinderopvang-en-bso",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "In onze kookworkshops laten we kinderen vanaf 2 jaar tot en met de BSO spelenderwijs nieuwe ingrediënten ontdekken."
+}

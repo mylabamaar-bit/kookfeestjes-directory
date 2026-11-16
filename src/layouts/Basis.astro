@@ -1,0 +1,19 @@
+---
+// Tijdelijke basislayout; design volgt in Fase 2.
+interface Props { titel: string; beschrijving?: string }
+const { titel, beschrijving = 'Kookfeestjes en kinderkookworkshops per stad in Nederland.' } = Astro.props;
+---
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{titel}</title>
+    <meta name="description" content={beschrijving} />
+  </head>
+  <body>
+    <header><a href="/">Kookfeestjes Directory</a></header>
+    <main><slot /></main>
+  </body>
+</html>

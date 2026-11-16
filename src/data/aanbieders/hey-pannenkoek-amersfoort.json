@@ -1,0 +1,25 @@
+{
+  "naam": "HEY!Pannenkoek",
+  "slug": "hey-pannenkoek-amersfoort",
+  "stad": "amersfoort",
+  "website": "https://www.heypannenkoek.nl",
+  "kinderaanbod": "ja",
+  "type": "kookfeestje",
+  "prijsPerKindVan": 32.5,
+  "bronnen": [
+    {
+      "url": "https://www.heypannenkoek.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.heypannenkoek.nl/kinderfeestjes/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "HEY!Taart feestje vanaf € 32,50 per persoon minimaal 8 personen Kidskoek met snoepjes en ranja Workshop cupcakes decoreren of een boltaart maken"
+}

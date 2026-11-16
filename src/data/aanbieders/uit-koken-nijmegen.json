@@ -1,0 +1,26 @@
+{
+  "naam": "Uit-Koken",
+  "slug": "uit-koken-nijmegen",
+  "stad": "nijmegen",
+  "website": "https://www.uit-koken.nl",
+  "kinderaanbod": "ja",
+  "type": "kookfeestje",
+  "prijsPerKindVan": 15,
+  "prijsPerKindTot": 15,
+  "bronnen": [
+    {
+      "url": "https://www.uit-koken.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.uit-koken.nl/kinderfeestje-nijmegen/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Wij bieden kinderen de mogelijkheid om hun verjaardag te vieren in de kookstudio en samen met vriendjes en vriendinnetjes hun eigen maaltijd te bereiden."
+}

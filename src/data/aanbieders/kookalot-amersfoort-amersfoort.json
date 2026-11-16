@@ -1,0 +1,28 @@
+{
+  "naam": "KOOKalot Amersfoort",
+  "slug": "kookalot-amersfoort-amersfoort",
+  "stad": "amersfoort",
+  "website": "https://www.kookalot.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "leeftijdVan": 7,
+  "leeftijdTot": 12,
+  "prijsPerKindVan": 20,
+  "prijsPerKindTot": 21.5,
+  "bronnen": [
+    {
+      "url": "https://www.kookalot.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.kookalot.nl/kinderkookles",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Kinderkookworkshops voor kinderen van 7 t/m 12 jaar. De kookles duurt 2 uur en kost € 20,- p.p."
+}

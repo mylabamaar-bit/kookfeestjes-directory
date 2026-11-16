@@ -1,0 +1,25 @@
+{
+  "naam": "De Vrijstaat",
+  "slug": "de-vrijstaat-utrecht",
+  "stad": "utrecht",
+  "website": "https://www.devrijstaat.nl",
+  "kinderaanbod": "twijfel",
+  "type": "workshop",
+  "leeftijdVan": 8,
+  "bronnen": [
+    {
+      "url": "https://www.devrijstaat.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.devrijstaat.nl/kinderen/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "8+ KookKeet Ontdek geuren en smaken in de keuken 6 lessen op woensdagmiddag"
+}

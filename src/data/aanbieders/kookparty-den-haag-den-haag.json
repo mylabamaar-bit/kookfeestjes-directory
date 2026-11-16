@@ -1,0 +1,25 @@
+{
+  "naam": "Kookparty Den Haag",
+  "slug": "kookparty-den-haag-den-haag",
+  "stad": "den-haag",
+  "website": "https://www.kookparty.com",
+  "kinderaanbod": "ja",
+  "type": "kookfeestje",
+  "leeftijdVan": 6,
+  "bronnen": [
+    {
+      "url": "https://www.kookparty.com",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.kookparty.com/kinderfeest/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Kookparty biedt leerzame kookfeestjes aan die voor iedereen leuk en lekker zijn! We bieden verschillende leuke thema's, variërend van taarten maken tot een spannende kookquiz. Deze feestjes zijn geschikt voor kinderen vanaf 6 jaar."
+}

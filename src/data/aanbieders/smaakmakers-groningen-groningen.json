@@ -1,0 +1,26 @@
+{
+  "naam": "Smaakmakers Groningen",
+  "slug": "smaakmakers-groningen-groningen",
+  "stad": "groningen",
+  "website": "https://www.smaakmakersgroningen.nl",
+  "kinderaanbod": "ja",
+  "type": "workshop",
+  "leeftijdVan": 7,
+  "leeftijdTot": 12,
+  "bronnen": [
+    {
+      "url": "https://www.smaakmakersgroningen.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://smaakmakersgroningen.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "We organiseren workshops en uitjes voor kinderen vanaf zeven jaar. De kinderen leren onze begeleiding om zelf gezonde gerechten uit verschillende keukens te bereiden én te eten."
+}

@@ -1,0 +1,24 @@
+{
+  "naam": "Kookstudio Claire Culinair",
+  "slug": "kookstudio-claire-culinair-eindhoven",
+  "stad": "eindhoven",
+  "website": "https://www.claireculinair.nl",
+  "kinderaanbod": "twijfel",
+  "type": "workshop",
+  "bronnen": [
+    {
+      "url": "https://www.claireculinair.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.claireculinair.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "Geschikt voor een bedrijfsuitje, teambuilding, een vergadering of gezellig met vrienden en familie."
+}

@@ -1,0 +1,28 @@
+{
+  "name": "kookfeestjes-directory",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "data:outscraper": "node scripts/outscraper-proefrun.mjs",
+    "data:controleer": "node scripts/controleer-websites.mjs",
+    "lint": "astro check && for f in scripts/*.mjs scripts/checks/*.mjs; do node --check \"$f\"; done",
+    "check:data": "node scripts/checks/valideer-data.mjs",
+    "check:links": "node scripts/checks/linkcheck.mjs",
+    "check": "npm run lint && npm run build && npm run check:data && npm run check:links"
+  },
+  "dependencies": {
+    "astro": "6.4.8"
+  },
+  "private": true,
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "typescript": "^6.0.3"
+  }
+}

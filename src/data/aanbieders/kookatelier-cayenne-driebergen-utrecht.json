@@ -1,0 +1,24 @@
+{
+  "naam": "Kookatelier Cayenne (Driebergen)",
+  "slug": "kookatelier-cayenne-driebergen-utrecht",
+  "stad": "utrecht",
+  "website": "https://www.cayennedriebergen.nl",
+  "kinderaanbod": "ja",
+  "type": "kookfeestje",
+  "bronnen": [
+    {
+      "url": "https://www.cayennedriebergen.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.cayennedriebergen.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Kinderkookfeestjes Een bruisend kinderfeestje vier je bij Cayenne. Van de kleinste kokkies tot puberende cupcake bakkers: wij bieden vermaak voor iedere leeftijd."
+}

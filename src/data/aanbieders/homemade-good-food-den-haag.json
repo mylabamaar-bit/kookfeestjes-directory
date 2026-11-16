@@ -1,0 +1,19 @@
+{
+  "naam": "Homemade Good Food",
+  "slug": "homemade-good-food-den-haag",
+  "stad": "den-haag",
+  "website": "https://www.homemade-good-food.nl",
+  "kinderaanbod": "twijfel",
+  "type": "kookfeestje",
+  "bronnen": [
+    {
+      "url": "https://www.homemade-good-food.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "Kookworkshop Kinderfeestje Een feestje om samen te maken! 👩🏾‍🍳 Voor kinderen die dol zijn op bakken, koken en lekker bezig zijn in de keuken."
+}

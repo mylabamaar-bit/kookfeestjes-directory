@@ -1,0 +1,31 @@
+# Controles op elke pull request en push naar main.
+# De job heet "checks": die naam wordt de verplichte status check in de branch protection.
+name: checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: STOP-check
+        run: bash scripts/stop-check.sh
+        env:
+          KILL_SWITCH: ${{ vars.KILL_SWITCH }}
+      - run: npm run lint
+      - run: npm run build
+      - run: npm run check:data
+      - run: npm run check:links

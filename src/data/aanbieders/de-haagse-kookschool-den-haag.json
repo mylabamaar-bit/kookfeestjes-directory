@@ -1,0 +1,24 @@
+{
+  "naam": "De Haagse Kookschool",
+  "slug": "de-haagse-kookschool-den-haag",
+  "stad": "den-haag",
+  "website": "https://www.kookschool-denhaag.nl",
+  "kinderaanbod": "twijfel",
+  "type": "workshop",
+  "bronnen": [
+    {
+      "url": "https://www.kookschool-denhaag.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.kookschool-denhaag.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "Kookschool Den Haag - Kooklessen voor groepen. Particulier en zakelijk. Koken op school Koken met de buren"
+}

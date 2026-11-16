@@ -1,0 +1,26 @@
+{
+  "naam": "Kinderkookfeestje Amersfoort",
+  "slug": "kinderkookfeestje-amersfoort-amersfoort",
+  "stad": "amersfoort",
+  "website": "https://www.kinderkookfeestje.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "leeftijdVan": 5,
+  "leeftijdTot": 15,
+  "bronnen": [
+    {
+      "url": "https://www.kinderkookfeestje.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://kinderkookfeestje.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Onze kook kinderfeestjes zijn geschikt voor kinderen vanaf 5 jaar en kunnen volledig worden afgestemd op jouw wensen."
+}

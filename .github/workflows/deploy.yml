@@ -1,0 +1,119 @@
+# Deploy naar Cloudflare Pages: eerst preview + health check, dan productie + health check.
+# Faalt de productie-health-check, dan rollback naar de vorige productie-deploy (Cloudflare API).
+# Secrets: CLOUDFLARE_API_TOKEN (Account › Cloudflare Pages › Edit), CLOUDFLARE_ACCOUNT_ID.
+# Variabelen (optioneel): CF_PAGES_PROJECT (standaard "kookfeestjes"), KILL_SWITCH.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  PROJECT: ${{ vars.CF_PAGES_PROJECT || 'kookfeestjes' }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: STOP-check
+        id: stop
+        env:
+          KILL_SWITCH: ${{ vars.KILL_SWITCH }}
+        run: |
+          if bash scripts/stop-check.sh; then echo "actief=nee" >> "$GITHUB_OUTPUT"
+          else
+            echo "actief=ja" >> "$GITHUB_OUTPUT"
+            echo "::warning::STOP actief – er wordt NIETS gedeployd."
+            echo "## Deploy overgeslagen: STOP actief" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - uses: actions/setup-node@v5
+        if: steps.stop.outputs.actief == 'nee'
+        with:
+          node-version: 22
+          cache: npm
+      - name: Checks
+        if: steps.stop.outputs.actief == 'nee'
+        run: |
+          npm ci
+          npm run lint
+          npm run build
+          npm run check:data
+          npm run check:links
+
+      - name: Cloudflare Pages preview + productie
+        id: cf
+        if: steps.stop.outputs.actief == 'nee'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          zet() { echo "$1=$2" >> "$GITHUB_OUTPUT"; }
+          API="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/$PROJECT"
+          cf() { curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$@"; }
+          WRANGLER="npx --yes wrangler@4"
+
+          # Project aanmaken als het nog niet bestaat (gratis; productietak = main).
+          if ! cf "$API" >/dev/null 2>&1; then
+            $WRANGLER pages project create "$PROJECT" --production-branch=main
+          fi
+          PROD_URL="https://$(cf "$API" | jq -r '.result.subdomain')"
+
+          # Preview (niet-productietak): eigen URL, productie onaangeraakt.
+          PREVIEW=$($WRANGLER pages deploy dist --project-name="$PROJECT" --branch=preview \
+            --commit-hash="$GITHUB_SHA" 2>&1 | tee /dev/stderr \
+            | grep -oE 'https://[a-z0-9.-]+\.pages\.dev' | tail -1)
+          zet preview "$PREVIEW"
+          if ! bash scripts/deploy/health-check.sh "$PREVIEW"; then
+            zet resultaat "preview-health-check mislukt, productie niet aangeraakt"; exit 1
+          fi
+
+          # Huidige productie-deploy onthouden voor een eventuele rollback.
+          VORIGE=$(cf "$API/deployments?env=production" \
+            | jq -r '[.result[] | select(.latest_stage.status=="success")][0].id // empty') || VORIGE=""
+          echo "Vorige productie-deploy: ${VORIGE:-geen}"
+
+          # Productie
+          $WRANGLER pages deploy dist --project-name="$PROJECT" --branch=main --commit-hash="$GITHUB_SHA"
+          zet productie "$PROD_URL"
+          if bash scripts/deploy/health-check.sh "$PROD_URL"; then
+            zet resultaat "geslaagd"; exit 0
+          fi
+
+          if [ -n "$VORIGE" ]; then
+            echo "::error::Productie-health-check mislukt – rollback naar $VORIGE"
+            if cf -X POST "$API/deployments/$VORIGE/rollback" >/dev/null; then
+              zet resultaat "productie-health-check mislukt, rollback uitgevoerd naar $VORIGE"
+            else
+              zet resultaat "productie-health-check mislukt, ROLLBACK MISLUKT – handmatig ingrijpen"
+            fi
+          else
+            zet resultaat "productie-health-check mislukt, geen vorige deploy voor rollback"
+          fi
+          exit 1
+
+      - name: Job summary
+        if: always() && steps.stop.outputs.actief == 'nee'
+        env:
+          PREVIEW: ${{ steps.cf.outputs.preview }}
+          PRODUCTIE: ${{ steps.cf.outputs.productie }}
+          RESULTAAT: ${{ steps.cf.outputs.resultaat || job.status }}
+        run: |
+          {
+            echo "## Deploy (Cloudflare Pages)"
+            echo "| | |"; echo "|---|---|"
+            echo "| Preview | ${PREVIEW:--} |"
+            echo "| Productie | ${PRODUCTIE:--} |"
+            echo "| Resultaat | ${RESULTAAT} |"
+          } >> "$GITHUB_STEP_SUMMARY"

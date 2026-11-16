@@ -1,0 +1,24 @@
+{
+  "naam": "Het Zesde Geluk",
+  "slug": "het-zesde-geluk-rotterdam",
+  "stad": "rotterdam",
+  "website": "https://www.hetzesdegeluk.com",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "bronnen": [
+    {
+      "url": "https://www.hetzesdegeluk.com",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.hetzesdegeluk.com/kookworkshops",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Kinderworkshop Reserveer een kinderkookworkshop voor een verjaardag of een kinderfeestje"
+}

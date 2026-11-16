@@ -1,0 +1,24 @@
+{
+  "naam": "Kookers Kookevenementen",
+  "slug": "kookers-kookevenementen-utrecht",
+  "stad": "utrecht",
+  "website": "https://www.kookers.nl",
+  "kinderaanbod": "ja",
+  "type": "workshop",
+  "bronnen": [
+    {
+      "url": "https://www.kookers.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.kookers.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Doelgroepen Kinder kookworkshop Voeding en zwangerschap Verstandelijk gehandicapten"
+}

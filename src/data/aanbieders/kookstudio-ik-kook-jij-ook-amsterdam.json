@@ -1,0 +1,28 @@
+{
+  "naam": "Kookstudio Ik kook jij ook",
+  "slug": "kookstudio-ik-kook-jij-ook-amsterdam",
+  "stad": "amsterdam",
+  "website": "https://www.kookstudioikkookjijook.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "leeftijdVan": 10,
+  "leeftijdTot": 15,
+  "prijsPerKindVan": 20,
+  "prijsPerKindTot": 25,
+  "bronnen": [
+    {
+      "url": "https://www.kookstudioikkookjijook.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.kookstudioikkookjijook.nl/feestjes",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Kinderfeestje Kinder kookworkshops zijn de tofste kinderfeestjes om te geven of aan deel te nemen."
+}

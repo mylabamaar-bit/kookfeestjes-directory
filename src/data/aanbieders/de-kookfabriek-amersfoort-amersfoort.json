@@ -1,0 +1,24 @@
+{
+  "naam": "De Kookfabriek Amersfoort",
+  "slug": "de-kookfabriek-amersfoort-amersfoort",
+  "stad": "amersfoort",
+  "website": "https://www.kookfabriek.nl",
+  "kinderaanbod": "twijfel",
+  "type": "workshop",
+  "bronnen": [
+    {
+      "url": "https://www.kookfabriek.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://kookfabriek.nl/kookworkshops/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "Of je nou op zoek bent naar een teambuilding activiteit, jubileum-uitje of invulling voor een vrijgezellenfeest, onze kookworkshops zijn geschikt voor iedereen!"
+}

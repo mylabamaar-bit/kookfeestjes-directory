@@ -1,0 +1,24 @@
+{
+  "naam": "Kookstudio Vonk",
+  "slug": "kookstudio-vonk-utrecht",
+  "stad": "utrecht",
+  "website": "https://www.kookstudiovonk.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "bronnen": [
+    {
+      "url": "https://www.kookstudiovonk.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://kookstudiovonk.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "kookworkshop Kinderfeestje Spelenderwijs aan de slag in de keuken. Samen koken, bakken, lachen en trots zijn op wat er op tafel komt."
+}

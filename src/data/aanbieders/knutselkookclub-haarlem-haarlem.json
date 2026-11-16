@@ -1,0 +1,25 @@
+{
+  "naam": "Knutselkookclub Haarlem",
+  "slug": "knutselkookclub-haarlem-haarlem",
+  "stad": "haarlem",
+  "website": "https://www.knutselkookclub.nl",
+  "kinderaanbod": "twijfel",
+  "type": "beide",
+  "leeftijdVan": 4,
+  "bronnen": [
+    {
+      "url": "https://www.knutselkookclub.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.knutselkookclub.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "Bovendien zijn we ook heel goed in het vieren van een feestje! Je kunt kiezen uit thema’s als piraten of prinsessen, (eenhoorn)taarten, pizzabakfeesten"
+}

@@ -1,0 +1,19 @@
+{
+  "naam": "De Moestuin Maarschalkerweerd",
+  "slug": "de-moestuin-maarschalkerweerd-utrecht",
+  "stad": "utrecht",
+  "website": "https://www.moestuinutrecht.nl",
+  "kinderaanbod": "twijfel",
+  "type": "kookfeestje",
+  "bronnen": [
+    {
+      "url": "https://www.moestuinutrecht.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "Je kinderfeestje vieren in onze knalgele pipowagen ... Of gaan jullie lekker minicakejes versieren met gepofte rijst in alle kleurtjes?"
+}

@@ -1,0 +1,12 @@
+[
+  { "id": "amsterdam", "naam": "Amsterdam", "provincie": "Noord-Holland" },
+  { "id": "rotterdam", "naam": "Rotterdam", "provincie": "Zuid-Holland" },
+  { "id": "den-haag", "naam": "Den Haag", "provincie": "Zuid-Holland" },
+  { "id": "utrecht", "naam": "Utrecht", "provincie": "Utrecht" },
+  { "id": "nijmegen", "naam": "Nijmegen", "provincie": "Gelderland" },
+  { "id": "eindhoven", "naam": "Eindhoven", "provincie": "Noord-Brabant" },
+  { "id": "groningen", "naam": "Groningen", "provincie": "Groningen" },
+  { "id": "arnhem", "naam": "Arnhem", "provincie": "Gelderland" },
+  { "id": "haarlem", "naam": "Haarlem", "provincie": "Noord-Holland" },
+  { "id": "amersfoort", "naam": "Amersfoort", "provincie": "Utrecht" }
+]

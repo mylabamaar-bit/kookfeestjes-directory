@@ -1,0 +1,26 @@
+{
+  "naam": "By Marielle",
+  "slug": "by-marielle-eindhoven",
+  "stad": "eindhoven",
+  "website": "https://www.bymarielle-kw.nl",
+  "kinderaanbod": "ja",
+  "type": "kookfeestje",
+  "prijsPerKindVan": 20.5,
+  "prijsPerKindTot": 20.5,
+  "bronnen": [
+    {
+      "url": "https://www.bymarielle-kw.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://bymarielle-kw.nl/kinderfeestjes/boltaartje-versieren-kinderfeestje/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Tijdens het boltaartje versieren kinderfeestje maken kinderen hun eigen boltaartje van begin tot eind. Van vullen en bekleden met fondant tot versieren met glitters en vormpjes: alles kan!"
+}

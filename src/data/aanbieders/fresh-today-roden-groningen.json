@@ -1,0 +1,24 @@
+{
+  "naam": "Fresh Today (Roden)",
+  "slug": "fresh-today-roden-groningen",
+  "stad": "groningen",
+  "website": "https://www.freshtoday.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "bronnen": [
+    {
+      "url": "https://www.freshtoday.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://freshtoday.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Kookworkshops Tapas Workshop Italiaanse Kookworkshop Griekse Workshop Gezond Koken High Tea/Wine Workshop Barbecue Workshop Kids Workshop Groepsactiviteiten Jeu de Boules &#038; Meer Feestavond Vergadering Kinderfeestjes"
+}

@@ -1,0 +1,24 @@
+{
+  "naam": "Kookschool Arnhem",
+  "slug": "kookschool-arnhem-arnhem",
+  "stad": "arnhem",
+  "website": "https://www.kookschoolarnhem.nl",
+  "kinderaanbod": "twijfel",
+  "type": "workshop",
+  "bronnen": [
+    {
+      "url": "https://www.kookschoolarnhem.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://kookschoolarnhem.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": true,
+  "_bewijs": "Familie Koken met je Familie Van jong tot oud samen de keuken in — een gezellige, laagdrempelige workshop waar het hele gezin aan meedoet."
+}

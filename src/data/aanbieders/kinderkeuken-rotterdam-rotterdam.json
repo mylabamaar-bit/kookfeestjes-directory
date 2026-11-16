@@ -1,0 +1,26 @@
+{
+  "naam": "Kinderkeuken Rotterdam",
+  "slug": "kinderkeuken-rotterdam-rotterdam",
+  "stad": "rotterdam",
+  "website": "https://www.kinderkeukenrotterdam.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "prijsPerKindVan": 19.95,
+  "prijsPerKindTot": 19.95,
+  "bronnen": [
+    {
+      "url": "https://www.kinderkeukenrotterdam.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://kinderkeukenrotterdam.nl/over/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Kosten: € 19,95 per kind ( je betaalt voor minimaal 9 kinderen ) en € 35 voor de huur van de locatie."
+}

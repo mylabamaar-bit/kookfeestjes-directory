@@ -1,0 +1,28 @@
+{
+  "naam": "Het Kinderkookkafé",
+  "slug": "het-kinderkookkafe-amsterdam",
+  "stad": "amsterdam",
+  "website": "https://www.kinderkookkafe.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "leeftijdVan": 2,
+  "leeftijdTot": 12,
+  "prijsPerKindVan": 15,
+  "prijsPerKindTot": 15,
+  "bronnen": [
+    {
+      "url": "https://www.kinderkookkafe.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://www.kinderkookkafe.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Verjaardagsfeestjes Kom je verjaardagsfeestje vieren! Dat kan, op vrijdag en in het weekend. Er zijn feestjes naar leeftijd en met en zonder gasten. – help-jezelf-feestje 2-4 jaar – Le Petit Brun ch 7-12 jaar"
+}

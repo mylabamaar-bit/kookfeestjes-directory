@@ -1,0 +1,26 @@
+{
+  "naam": "De Kookmuts",
+  "slug": "de-kookmuts-arnhem",
+  "stad": "arnhem",
+  "website": "https://www.dekookmuts.nl",
+  "kinderaanbod": "ja",
+  "type": "beide",
+  "prijsPerKindVan": 21,
+  "prijsPerKindTot": 21,
+  "bronnen": [
+    {
+      "url": "https://www.dekookmuts.nl",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    },
+    {
+      "url": "https://dekookmuts.nl/",
+      "soort": "website",
+      "gecontroleerd": "2026-11-02"
+    }
+  ],
+  "laatstGecontroleerd": "2026-11-02",
+  "uitgelicht": false,
+  "handmatigeCheck": false,
+  "_bewijs": "Kinderkookstudio de Kookmuts is speciaal gericht op kinderen, voor kookles, kinderfeestjes, losse workshops, kinderactiviteiten op locatie en gezinsworkshops!"
+}

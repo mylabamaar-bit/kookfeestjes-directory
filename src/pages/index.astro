@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import Basis from '../layouts/Basis.astro';
+const steden = await getCollection('steden');
+const aanbieders = await getCollection('aanbieders', (a) => a.data.kinderaanbod !== 'nee');
+const aantal = (id: string) => aanbieders.filter((a) => a.data.stad === id).length;
+---
+<Basis titel="Kookfeestjes en kinderkookworkshops per stad | Kookfeestjes Directory">
+  <h1>Kookfeestjes en kinderkookworkshops in Nederland</h1>
+  <p>Vind een kookfeestje of kookworkshop voor kinderen bij jou in de buurt.</p>
+  <ul>
+    {steden.map((s) => <li><a href={`/${s.id}/`}>{s.data.naam}</a> ({aantal(s.id)} aanbieders)</li>)}
+  </ul>
+</Basis>
